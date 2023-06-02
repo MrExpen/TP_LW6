@@ -1,0 +1,29 @@
+﻿
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    <label>Id</label>
+    @Html.TextBox("id")
+    <br/>
+    
+    <label>Фамилия</label>
+    @Html.TextBox("lastName")
+    <br/>
+    
+    <label>Имя</label>
+    @Html.TextBox("firstName")
+    <br/>
+    
+    <label>Отчетсво</label>
+    @Html.TextBox("patronymic")
+    <br/>
+    
+    <label>Сумма в банке</label>
+    @Html.TextBox("depositAmount")
+    <br/>
+    
+    <label>День рождения</label>
+    @Html.TextBox("birthday")
+    <br/>
+
+    <input type="submit" value="Отправить" />
+}
